@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example creates an object with properties (firstName, lastName, address, pincode, city, state, mobileNumber).</p>
+
+<p id="demo"></p>
+
+<script>
+const myObject = {
+  firstName:"Kanchan",
+  lastName: "Solanke",
+  address: "Lake street",
+  pincode: "123456",
+  city: "Pune",
+  state: "Maharashtra",
+  mobileNumber :"9087894563",
+ function() {
+    return this.firstName + " " + this.lastName +" "+this.address+ " " + this.pincode +" " + this.city +" " + this.state +" " + this.mobileNumber;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.function();
+</script>
+
+</body>
+</html>
